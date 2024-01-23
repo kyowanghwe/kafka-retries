@@ -1,0 +1,54 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  kafka:
+    bootstrap-servers: ${KAFKA_BROKER:localhost:29092}
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+openapi:
+  service:
+    title: "Saldo Service"
+    version: 2.0
+    url: ${SALDO:http://localhost:2645}
+
+amazon:
+  dynamodb:
+    endpoint: ${amazon-dynamodb-endpoint:dynamodb.eu-west-1.amazonaws.com}
+    region: ${amazon-dynamodb-region:eu-west-1}
+    accessKey: ${amazon-dynamodb-accessKey:xxx}
+    secretKey: ${amazon-dynamodb-secretKey:xxx}
+
+redis:
+  host: ${REDIS_HOST:localhost}
+  port: ${REDIS_PORT:6379}
+
+grpc:
+  client:
+    cloud-grpc-auth-server:
+      address: ${GRPC_AUTH_SERVER:localhost:3631}
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+    cloud-grpc-account-server:
+      address: ${GRPC_ACCOUNT_SERVER:localhost:3632}
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+    cloud-grpc-common-server:
+      address: ${GRPC_COMMON_SERVER:localhost:3641}
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+    cloud-grpc-notification-server:
+      address: ${GRPC_NOTIFICATION_SERVER:localhost:3640}
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
