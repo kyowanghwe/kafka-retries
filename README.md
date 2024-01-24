@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-ar21.svg" alt="Logo" width="240" height="120" background-color="lightgreen" border-radius="15% 15% 15% 15% / 25% 25% 25% 25%">
+    <img src="https://svn.apache.org/repos/asf/kafka/site/logos/originals/png/ICON%20-%20Black%20on%20Transparent.png" alt="Logo" width="240" height="120">
   </a>
 
   <h3 align="center">Non-Blocking Retries in Kafka</h3>
