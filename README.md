@@ -102,16 +102,9 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [![Spring][Spring-shields]][Spring-url]
+* [![Redis][Redis-shields]][Redis-url]
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,9 +133,9 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+3. Install docker
    ```sh
-   npm install
+   docker compose up -d
    ```
 4. Enter your API in `config.js`
    ```js
@@ -219,10 +212,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+<!-- References -->
+## References
 
 * [Medium: retrying-consumer-architecture-in-the-apache-kafka](https://blog.pragmatists.com/retrying-consumer-architecture-in-the-apache-kafka-939ac4cb851a)
 * [Baeldung: spring-retry-kafka-consumer](https://www.baeldung.com/spring-retry-kafka-consumer)
@@ -263,3 +254,7 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Redis-shields]: https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white
+[Redis-url]: https://redis.io
+[Spring-shields]: https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white
+[Spring-url]: https://spring.io
