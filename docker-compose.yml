@@ -37,6 +37,17 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+  
+  kowl:
+    image: quay.io/cloudhut/kowl:v1.3.1
+    restart: on-failure
+    container_name: kowl
+    ports:
+      - '8080:8080'
+    depends_on:
+      - kafka
+    environment:
+      KAFKA_BROKERS: "kafka:9092"
 
 #  discovery-server:
 #    container_name: discovery-server
