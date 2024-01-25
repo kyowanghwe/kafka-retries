@@ -102,6 +102,7 @@ Use the `BLANK_README.md` to get started.
 
 * [![Spring][Spring-shields]][Spring-url]
 * [![Redis][Redis-shields]][Redis-url]
+* [![Kafka][Kafka-shields]][Kafka-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -255,3 +256,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [Redis-url]: https://redis.io
 [Spring-shields]: https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white
 [Spring-url]: https://spring.io
+[Kafka-shields]: https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&logo=apachekafka
+[Kafka-url]: https://kafka.apache.org/
