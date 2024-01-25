@@ -116,34 +116,32 @@ Use the `BLANK_README.md` to get started.
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install docker
+1. Install docker
    ```sh
    docker compose up -d
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+2. Install RedisInsight to view DB
+
+3. Init data in `KafkaRetryTest.java`
+   ```java
+   @Test
+    void initTransaction(){
+        TransactionRequest transactionRequest = TransactionRequest.builder()
+                .phoneNumber("254986890007")
+                .transactionRequestId("08d97d43-c1f3-42c1-b8cc-6b1f7e5a8b44")
+                .status(CONFIRMED)
+                .build();
+        transactionRequestRepository.save(transactionRequest);
+        System.out.println("init success");
+    }
    ```
+4. Run the application
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
